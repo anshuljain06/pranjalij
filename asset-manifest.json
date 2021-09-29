@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/pranjalij/static/css/main.a617e044.chunk.css",
-    "main.js": "/pranjalij/static/js/main.002e53d4.chunk.js",
-    "main.js.map": "/pranjalij/static/js/main.002e53d4.chunk.js.map",
+    "main.css": "/pranjalij/static/css/main.2a36cfb5.chunk.css",
+    "main.js": "/pranjalij/static/js/main.71a0119d.chunk.js",
+    "main.js.map": "/pranjalij/static/js/main.71a0119d.chunk.js.map",
     "runtime-main.js": "/pranjalij/static/js/runtime-main.ec34e036.js",
     "runtime-main.js.map": "/pranjalij/static/js/runtime-main.ec34e036.js.map",
     "static/js/2.71b165af.chunk.js": "/pranjalij/static/js/2.71b165af.chunk.js",
@@ -10,14 +10,29 @@
     "static/js/3.c30ec8fc.chunk.js": "/pranjalij/static/js/3.c30ec8fc.chunk.js",
     "static/js/3.c30ec8fc.chunk.js.map": "/pranjalij/static/js/3.c30ec8fc.chunk.js.map",
     "index.html": "/pranjalij/index.html",
-    "static/css/main.a617e044.chunk.css.map": "/pranjalij/static/css/main.a617e044.chunk.css.map",
+    "static/css/main.2a36cfb5.chunk.css.map": "/pranjalij/static/css/main.2a36cfb5.chunk.css.map",
     "static/js/2.71b165af.chunk.js.LICENSE.txt": "/pranjalij/static/js/2.71b165af.chunk.js.LICENSE.txt",
-    "static/media/logo.6ce24c58.svg": "/pranjalij/static/media/logo.6ce24c58.svg"
+    "static/media/about.968a45ba.jpg": "/pranjalij/static/media/about.968a45ba.jpg",
+    "static/media/blog-1.c3a397b8.jpg": "/pranjalij/static/media/blog-1.c3a397b8.jpg",
+    "static/media/blog-2.c71db245.jpg": "/pranjalij/static/media/blog-2.c71db245.jpg",
+    "static/media/App.scss": "/pranjalij/static/media/hero-bg.93ab015b.jpg",
+    "static/media/hero.04623fc9.png": "/pranjalij/static/media/hero.04623fc9.png",
+    "static/media/logo.6ce24c58.svg": "/pranjalij/static/media/logo.6ce24c58.svg",
+    "static/media/portfolio-1.97916d39.jpg": "/pranjalij/static/media/portfolio-1.97916d39.jpg",
+    "static/media/portfolio-2.704e74a7.jpg": "/pranjalij/static/media/portfolio-2.704e74a7.jpg",
+    "static/media/portfolio-3.659ce5cb.jpg": "/pranjalij/static/media/portfolio-3.659ce5cb.jpg",
+    "static/media/portfolio-4.65eb0276.jpg": "/pranjalij/static/media/portfolio-4.65eb0276.jpg",
+    "static/media/portfolio-5.c1f7c637.jpg": "/pranjalij/static/media/portfolio-5.c1f7c637.jpg",
+    "static/media/portfolio-6.74888d6c.jpg": "/pranjalij/static/media/portfolio-6.74888d6c.jpg",
+    "static/media/team-1.bd10e017.jpg": "/pranjalij/static/media/team-1.bd10e017.jpg",
+    "static/media/team-2.c248430c.jpg": "/pranjalij/static/media/team-2.c248430c.jpg",
+    "static/media/team-3.50b57253.jpg": "/pranjalij/static/media/team-3.50b57253.jpg",
+    "static/media/team-4.3bcb3d97.jpg": "/pranjalij/static/media/team-4.3bcb3d97.jpg"
   },
   "entrypoints": [
     "static/js/runtime-main.ec34e036.js",
     "static/js/2.71b165af.chunk.js",
-    "static/css/main.a617e044.chunk.css",
-    "static/js/main.002e53d4.chunk.js"
+    "static/css/main.2a36cfb5.chunk.css",
+    "static/js/main.71a0119d.chunk.js"
   ]
 }
