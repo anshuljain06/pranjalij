@@ -1,5 +1,4 @@
-import logo from './logo.svg';
-import hero from './assets/hero.png';
+
 import about from './assets/about.jpg';
 import portfolio1 from './assets/portfolio-1.jpg';
 import portfolio2 from './assets/portfolio-2.jpg';
@@ -7,65 +6,24 @@ import portfolio3 from './assets/portfolio-3.jpg';
 import portfolio4 from './assets/portfolio-4.jpg';
 import portfolio5 from './assets/portfolio-5.jpg';
 import portfolio6 from './assets/portfolio-6.jpg';
-import testimonial1 from './assets/testimonial-1.jpg';
-import testimonial2 from './assets/testimonial-2.jpg';
-import testimonial3 from './assets/testimonial-3.jpg';
-import team1 from './assets/team-1.jpg';
-import team2 from './assets/team-2.jpg';
-import team3 from './assets/team-3.jpg';
-import team4 from './assets/team-4.jpg';
 import blog1 from './assets/blog-1.jpg';
 import blog2 from './assets/blog-2.jpg';
 import './App.scss';
+import AppHeader from './AppHeader';
+import Hero from './Sections/Hero';
+import AppFooter from './AppFooter';
+import BackToTopButton from './BackToTopButton';
+import Testimonials from './Sections/Testimonials';
 
 function App() {
   return (
     <div className="App">
 
-        <div class="navbar navbar-expand-lg bg-light navbar-light">
-            <div class="container-fluid">
-                <a href="index.html" class="navbar-brand">Pranjali Joshi</a>
-                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
-                    <div class="navbar-nav ml-auto">
-                        <a href="#home" class="nav-item nav-link active">Home</a>
-                        <a href="#about" class="nav-item nav-link">About Me</a>
-                        <a href="#portfolio" class="nav-item nav-link">Portfolio</a>
-                        <a href="#contact" class="nav-item nav-link">Contact</a>
-                    </div>
-                </div>
-            </div>
-        </div>
+        <AppHeader />
 
-        <div class="hero" id="home">
-            <div class="container-fluid">
-                <div class="row align-items-center">
-                    <div class="col-sm-12 col-md-6">
-                        <div class="hero-content">
-                            <div class="hero-text">
-                                <p>I'm</p>
-                                <h1>Pranjali Joshi</h1>
-                                <h2></h2>
-                                <div class="typed-text">Marketer, Singer</div>
-                            </div>
-                            <div class="hero-btn">
-                                <a class="btn" href="">Hire Me</a>
-                                <a class="btn" href="">Contact Me</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-12 col-md-6 d-none d-md-block">
-                        <div class="hero-image">
-                            <img src={hero} alt="Hero Image" />
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+        <Hero />
  
-        <div class="about wow fadeInUp" data-wow-delay="0.1s" id="about">
+        <div class="about" id="about">
             <div class="container-fluid">
                 <div class="row align-items-center">
                     <div class="col-lg-6">
@@ -119,12 +77,12 @@ function App() {
         
         <div class="service" id="service">
             <div class="container">
-                <div class="section-header text-center wow zoomIn" data-wow-delay="0.1s">
+                <div class="section-header text-center">
                     <p>What I do</p>
                     <h2>Awesome Quality Services</h2>
                 </div>
                 <div class="row">
-                    <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.0s">
+                    <div class="col-lg-6">
                         <div class="service-item">
                             <div class="service-icon">
                                 <i class="fa fa-laptop"></i>
@@ -137,7 +95,7 @@ function App() {
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.2s">
+                    <div class="col-lg-6" >
                         <div class="service-item">
                             <div class="service-icon">
                                 <i class="fa fa-laptop-code"></i>
@@ -150,7 +108,7 @@ function App() {
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.4s">
+                    <div class="col-lg-6">
                         <div class="service-item">
                             <div class="service-icon">
                                 <i class="fab fa-android"></i>
@@ -163,7 +121,7 @@ function App() {
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.6s">
+                    <div class="col-lg-6">
                         <div class="service-item">
                             <div class="service-icon">
                                 <i class="fab fa-apple"></i>
@@ -182,12 +140,12 @@ function App() {
         
         <div class="experience" id="experience">
             <div class="container">
-                <header class="section-header text-center wow zoomIn" data-wow-delay="0.1s">
+                <header class="section-header text-center">
                     <p>My Resume</p>
                     <h2>Working Experience</h2>
                 </header>
                 <div class="timeline">
-                    <div class="timeline-item left wow slideInLeft" data-wow-delay="0.1s">
+                    <div class="timeline-item left">
                         <div class="timeline-text">
                             <div class="timeline-date">2045 - 2050</div>
                             <h2>Web Developer</h2>
@@ -197,7 +155,7 @@ function App() {
                             </p>
                         </div>
                     </div>
-                    <div class="timeline-item right wow slideInRight" data-wow-delay="0.1s">
+                    <div class="timeline-item right">
                         <div class="timeline-text">
                             <div class="timeline-date">2045 - 2050</div>
                             <h2>Web Developer</h2>
@@ -207,7 +165,7 @@ function App() {
                             </p>
                         </div>
                     </div>
-                    <div class="timeline-item left wow slideInLeft" data-wow-delay="0.1s">
+                    <div class="timeline-item left">
                         <div class="timeline-text">
                             <div class="timeline-date">2045 - 2050</div>
                             <h2>Web Developer</h2>
@@ -217,7 +175,7 @@ function App() {
                             </p>
                         </div>
                     </div>
-                    <div class="timeline-item right wow slideInRight" data-wow-delay="0.1s">
+                    <div class="timeline-item right">
                         <div class="timeline-text">
                             <div class="timeline-date">2045 - 2050</div>
                             <h2>Web Developer</h2>
@@ -227,7 +185,7 @@ function App() {
                             </p>
                         </div>
                     </div>
-                    <div class="timeline-item left wow slideInLeft" data-wow-delay="0.1s">
+                    <div class="timeline-item left">
                         <div class="timeline-text">
                             <div class="timeline-date">2045 - 2050</div>
                             <h2>Web Developer</h2>
@@ -237,7 +195,7 @@ function App() {
                             </p>
                         </div>
                     </div>
-                    <div class="timeline-item right wow slideInRight" data-wow-delay="0.1s">
+                    <div class="timeline-item right">
                         <div class="timeline-text">
                             <div class="timeline-date">2045 - 2050</div>
                             <h2>Web Developer</h2>
@@ -251,7 +209,8 @@ function App() {
             </div>
         </div>
         
-        <div class="banner wow zoomIn" data-wow-delay="0.1s">
+        {/*
+        <div class="banner">
             <div class="container">
                 <div class="section-header text-center">
                     <p>Reasonable Price</p>
@@ -265,10 +224,11 @@ function App() {
                 </div>
             </div>
         </div>
+        */}
         
         <div class="portfolio" id="portfolio">
             <div class="container">
-                <div class="section-header text-center wow zoomIn" data-wow-delay="0.1s">
+                <div class="section-header text-center">
                     <p>My Portfolio</p>
                     <h2>My Excellent Portfolio</h2>
                 </div>
@@ -283,7 +243,7 @@ function App() {
                     </div>
                 </div>
                 <div class="row portfolio-container">
-                    <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-1 wow fadeInUp" data-wow-delay="0.0s">
+                    <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-1">
                         <div class="portfolio-wrap">
                             <div class="portfolio-img">
                                 <img src={portfolio1} alt="Image" />
@@ -294,7 +254,7 @@ function App() {
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-2 wow fadeInUp" data-wow-delay="0.2s">
+                    <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-2" >
                         <div class="portfolio-wrap">
                             <div class="portfolio-img">
                                 <img src={portfolio2} alt="Image" />
@@ -305,7 +265,7 @@ function App() {
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-3 wow fadeInUp" data-wow-delay="0.4s">
+                    <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-3" >
                         <div class="portfolio-wrap">
                             <div class="portfolio-img">
                                 <img src={portfolio3} alt="Image" />
@@ -316,7 +276,7 @@ function App() {
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-1 wow fadeInUp" data-wow-delay="0.6s">
+                    <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-1">
                         <div class="portfolio-wrap">
                             <div class="portfolio-img">
                                 <img src={portfolio4} alt="Image" />
@@ -327,7 +287,7 @@ function App() {
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-2 wow fadeInUp" data-wow-delay="0.8s">
+                    <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-2">
                         <div class="portfolio-wrap">
                             <div class="portfolio-img">
                                 <img src={portfolio5} alt="Image" />
@@ -338,7 +298,7 @@ function App() {
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-3 wow fadeInUp" data-wow-delay="1s">
+                    <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-3">
                         <div class="portfolio-wrap">
                             <div class="portfolio-img">
                                 <img src={portfolio6} alt="Image" />
@@ -352,8 +312,11 @@ function App() {
                 </div>
             </div>
         </div>
-        
-        <div class="banner wow zoomIn" data-wow-delay="0.1s">
+
+        < Testimonials />
+
+        {/*
+        <div class="banner">
             <div class="container">
                 <div class="section-header text-center">
                     <p>Awesome Discount</p>
@@ -370,12 +333,12 @@ function App() {
         
         <div class="price" id="price">
             <div class="container">
-                <div class="section-header text-center wow zoomIn" data-wow-delay="0.1s">
+                <div class="section-header text-center">
                     <p>Pricing Plan</p>
                     <h2>Affordable Price</h2>
                 </div>
                 <div class="row">
-                    <div class="col-md-4 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="col-md-4">
                         <div class="price-item">
                             <div class="price-header">
                                 <div class="price-title">
@@ -403,7 +366,7 @@ function App() {
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-4 wow fadeInUp" data-wow-delay="0.0s">
+                    <div class="col-md-4">
                         <div class="price-item featured-item">
                             <div class="price-header">
                                 <div class="price-title">
@@ -431,7 +394,7 @@ function App() {
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-4 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="col-md-4">
                         <div class="price-item">
                             <div class="price-header">
                                 <div class="price-title">
@@ -462,61 +425,19 @@ function App() {
                 </div>
             </div>
         </div>
+        */}
         
-        <div class="testimonial wow fadeInUp" data-wow-delay="0.1s" id="review">
-            <div class="container">
-                <div class="testimonial-icon">
-                    <i class="fa fa-quote-left"></i>
-                </div>
-                <div class="owl-carousel testimonials-carousel">
-                    <div class="testimonial-item">
-                        <div class="testimonial-img">
-                            <img src={testimonial1} alt="Image" />
-                        </div>
-                        <div class="testimonial-text">
-                            <p>
-                                Lorem ipsum dolor sit amet consec adipis elit. Etiam accums lacus eget velit tincid, quis suscip justo dictum. Lorem ipsum dolor sit amet consec adipis elit.
-                            </p>
-                            <h3>Customer Name</h3>
-                            <h4>Profession</h4>
-                        </div>
-                    </div>
-                    <div class="testimonial-item">
-                        <div class="testimonial-img">
-                            <img src={testimonial2} alt="Image" />
-                        </div>
-                        <div class="testimonial-text">
-                            <p>
-                                Lorem ipsum dolor sit amet consec adipis elit. Etiam accums lacus eget velit tincid, quis suscip justo dictum. Lorem ipsum dolor sit amet consec adipis elit.
-                            </p>
-                            <h3>Customer Name</h3>
-                            <h4>Profession</h4>
-                        </div>
-                    </div>
-                    <div class="testimonial-item">
-                        <div class="testimonial-img">
-                            <img src={testimonial3} alt="Image" />
-                        </div>
-                        <div class="testimonial-text">
-                            <p>
-                                Lorem ipsum dolor sit amet consec adipis elit. Etiam accums lacus eget velit tincid, quis suscip justo dictum. Lorem ipsum dolor sit amet consec adipis elit.
-                            </p>
-                            <h3>Customer Name</h3>
-                            <h4>Profession</h4>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
         
+        
+        {/*
         <div class="team" id="team">
             <div class="container">
-                <div class="section-header text-center wow zoomIn" data-wow-delay="0.1s">
+                <div class="section-header text-center">
                     <p>My Team</p>
                     <h2>Expert Team Members</h2>
                 </div>
                 <div class="row">
-                    <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.0s">
+                    <div class="col-lg-6">
                         <div class="team-item">
                             <div class="team-img">
                                 <img src={team1} alt="Image" />
@@ -536,7 +457,7 @@ function App() {
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.2s">
+                    <div class="col-lg-6" >
                         <div class="team-item">
                             <div class="team-img">
                                 <img src={team2} alt="Image" />
@@ -556,7 +477,7 @@ function App() {
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.4s">
+                    <div class="col-lg-6" >
                         <div class="team-item">
                             <div class="team-img">
                                 <img src={team3} alt="Image" />
@@ -576,7 +497,7 @@ function App() {
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.6s">
+                    <div class="col-lg-6">
                         <div class="team-item">
                             <div class="team-img">
                                 <img src={team4} alt="Image" />
@@ -600,7 +521,7 @@ function App() {
             </div>
         </div>
         
-        <div class="contact wow fadeInUp" data-wow-delay="0.1s" id="contact">
+        <div class="contact">
             <div class="container-fluid">
                 <div class="container">
                     <div class="row align-items-center">
@@ -635,16 +556,17 @@ function App() {
                 </div>
             </div>
         </div>
+        */}
         
         <div class="blog" id="blog">
             <div class="container">
-                <div class="section-header text-center wow zoomIn" data-wow-delay="0.1s">
+                <div class="section-header text-center">
                     <p>From Blog</p>
                     <h2>Latest Articles</h2>
                 </div>
                 <div class="row">
                     <div class="col-lg-6">
-                        <div class="blog-item wow fadeInUp" data-wow-delay="0.1s">
+                        <div class="blog-item">
                             <div class="blog-img">
                                 <img src={blog1} alt="Blog" />
                             </div>
@@ -664,7 +586,7 @@ function App() {
                         </div>
                     </div>
                     <div class="col-lg-6">
-                        <div class="blog-item wow fadeInUp" data-wow-delay="0.3s">
+                        <div class="blog-item">
                             <div class="blog-img">
                                 <img src={blog2} alt="Blog" />
                             </div>
@@ -687,36 +609,9 @@ function App() {
             </div>
         </div>
         
-        <div class="footer wow fadeIn" data-wow-delay="0.3s">
-            <div class="container-fluid">
-                <div class="container">
-                    <div class="footer-info">
-                        <h2>Kate Winslet</h2>
-                        <h3>123 Street, New York, USA</h3>
-                        <div class="footer-menu">
-                            <p>+012 345 67890</p>
-                            <p>info@example.com</p>
-                        </div>
-                        <div class="footer-social">
-                            <a href=""><i class="fab fa-twitter"></i></a>
-                            <a href=""><i class="fab fa-facebook-f"></i></a>
-                            <a href=""><i class="fab fa-youtube"></i></a>
-                            <a href=""><i class="fab fa-instagram"></i></a>
-                            <a href=""><i class="fab fa-linkedin-in"></i></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="container copyright">
-                    <p>&copy; <a href="#">Your Site Name</a>, All Right Reserved | Designed By <a href="https://htmlcodex.com">HTML Codex</a></p>
-                </div>
-            </div>
-        </div>
+        <AppFooter />
         
-        <a href="#" class="btn back-to-top"><i class="fa fa-chevron-up"></i></a>
-        
-        <div id="loader" class="show">
-            <div class="loader"></div>
-        </div>
+        <BackToTopButton />
 
       {/*
       <header className="App-header">

@@ -1,20 +1,5 @@
 (function ($) {
-    "use strict";
-    
-    // loader
-    var loader = function () {
-        setTimeout(function () {
-            if ($('#loader').length > 0) {
-                $('#loader').removeClass('show');
-            }
-        }, 1);
-    };
-    loader();
-    
-    
-    // Initiate the wowjs
-    new WOW().init();
-    
+    "use strict";    
     
     // Back to top button
     $(window).scroll(function () {
@@ -24,22 +9,7 @@
             $('.back-to-top').fadeOut('slow');
         }
     });
-    $('.back-to-top').click(function () {
-        $('html, body').animate({scrollTop: 0}, 1000, 'linear');
-        return false;
-    });
-    
-    
-    // Sticky Navbar
-    //$(window).scroll(function () {
-    //    if ($(this).scrollTop() > 0) {
-    //        $('.navbar').addClass('nav-sticky');
-    //    } else {
-    //        $('.navbar').removeClass('nav-sticky');
-    //    }
-    //});
-    
-    
+        
     // Smooth scrolling on the navbar links
     $(".navbar-nav a").on('click', function (event) {
         if (this.hash !== "") {
@@ -76,22 +46,6 @@
             $(this).css("width", $(this).attr("aria-valuenow") + '%');
         });
     }, {offset: '80%'});
-
-
-    // Testimonials carousel
-    $(".testimonials-carousel").owlCarousel({
-        center: true,
-        autoplay: true,
-        dots: true,
-        loop: true,
-        responsive: {
-            0:{
-                items:1
-            }
-        }
-    });
-    
-    
     
     // Portfolio filter
     var portfolioIsotope = $('.portfolio-container').isotope({
